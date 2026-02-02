@@ -1,7 +1,7 @@
 const { spawn } = require("child_process");
 
 const PLAYWRIGHT_PROJECT =
-  "C:/Users/proficom/PlaywrightAgentContinueRealWorldApp";
+  "C:/Users/proficom/PlaywrightAgentsContinueAdvantage";
 
 console.error(
   "[wrapper] Starting Playwright MCP server from:",

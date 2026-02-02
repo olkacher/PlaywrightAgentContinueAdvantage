@@ -24,6 +24,11 @@ RULES
 - Interact ONLY with visible elements.
 - Do NOT type, submit, save, or modify data.
 
+HARD RESET RULE
+- Ignore any previous navigation context.
+- Treat this run as a completely new application.
+- Use ONLY the current `browser_snapshot`.
+
 NAVIGATION
 1. From `browser_snapshot`:
    - Identify ALL visible top-level navigation items (menus, navigation links, page-level tabs; EXCLUDE action buttons).
