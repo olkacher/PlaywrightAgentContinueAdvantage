@@ -7,11 +7,12 @@ type TestFixtures = {
 
 export const test = base.extend<TestFixtures>({
   loginPage: async ({ page }, use) => {
-    await page.goto('http://frontend-ta-realworldapp.apps.os-prod.lab.proficom.de/');
-    await page.fill('#username', 'Solon_Robel60');
-    await page.fill('#password', 's3cret');
-    await page.click('[data-test="signin-submit"]');
-    await page.waitForSelector('[data-test="sidenav-signout"]');
+    await page.goto('https://www.advantageonlineshopping.com/#/');
+    await page.click('#menuUser');
+    await page.fill('[name="username"]', 'User123');
+    await page.fill('[name="password"]', 'User123');
+    await page.click('#sign_in_btn');
+    await expect(page.locator('#menuUserLink .hi-user')).toHaveText('User123');
     await use(page);
   },
 });
